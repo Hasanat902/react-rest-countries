@@ -13,7 +13,8 @@ const Countries = () => {
     }, [])
     return (
         <div>
-            <h2>All Countries: {countries.length}</h2>
+            <h1 style={{color: 'tomato'}}>Here you can find all countries of the world</h1>
+            <h2>Countries: {countries.length}</h2>
             <div className='countries'>
             {
                 countries.map(country => <Country country={country}></Country>)
